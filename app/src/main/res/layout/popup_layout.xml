@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/popup_background"
+    android:id="@+id/linlayPopup"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvPopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:maxLines="3"
+        android:text="@string/request"
+        android:textColor="@color/cararra"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ivAccept"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/button_background"
+                android:text="@string/accept"
+                android:textColor="@color/cararra"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ivReject"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/reject_button_background"
+                android:text="@string/reject"
+                android:textColor="@color/cararra"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
